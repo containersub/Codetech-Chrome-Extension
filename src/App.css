@@ -1,0 +1,57 @@
+/* src/App.css */
+.App {
+    width: 400px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .goal-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 8px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .stats {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    background: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  
+  .progress {
+    background: #4CAF50;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+  }
+  
+  .website-list {
+    text-align: left;
+  }
+  
+  .website-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }

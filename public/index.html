@@ -1,0 +1,22 @@
+<script>
+    // Mock Chrome API for development
+    if (location.protocol !== 'chrome-extension:') {
+      window.chrome = {
+        storage: {
+          sync: {
+            get: (keys, callback) => callback({}),
+            set: (data, callback) => callback()
+          },
+          local: {
+            get: (keys, callback) => callback({}),
+            set: (data, callback) => callback()
+          }
+        },
+        tabs: {
+          onActivated: { addListener: () => {} },
+          onUpdated: { addListener: () => {} },
+          get: (id, callback) => callback({})
+        }
+      };
+    }
+  </script>
